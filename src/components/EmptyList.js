@@ -4,7 +4,7 @@ import '../index.css';
 const EmptyList = () => (
   <div className='emptyList-wrap'>
     <img src={logo} alt='empty' />
-    <p>No categories here</p>
+    <p>あれ？？No categories here</p>
   </div>
 );
 export default EmptyList;
