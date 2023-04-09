@@ -193,15 +193,6 @@ input {
   max-width: 250px;
   width: 100%;
 }
-
-.blogItem-cover {
-  transition: transform 0.2s;
-}
-
-.blogItem-cover:hover {
-  transform: scale(1.1);
-}
-
 /* Chip */
 .chip {
   font-size: 0.7rem;
