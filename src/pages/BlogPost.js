@@ -28,7 +28,7 @@ const Blog = ({content}) => {
               
             </div>
           </header>
-          <img src={content.featured_image} alt='cover' />
+          <img src={content.featured_image} alt='cover'/>
           <div className='blog-content' dangerouslySetInnerHTML={{__html: content.body}}></div>
         </div>
       ) : (
