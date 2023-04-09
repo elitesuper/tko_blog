@@ -4,12 +4,15 @@ import HomePage from "./pages/HomePage";
 import BlogPost from "./pages/BlogPost";
 import { React, useState } from "react";
 
+
+
 function App() {
 const [getBlogContent, setGetBlogContent] = useState([]);
   const getData = (blog) => {
     setGetBlogContent(blog);
   }
   return (
+
     <div>
       <div className="container">
         <Routes>
