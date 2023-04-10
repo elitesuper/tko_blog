@@ -255,25 +255,12 @@ input {
   padding: 0 !important;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 500px) {
-  .home-header h1, p {
-    display: block;
+@media only screen and (max-width: 750px) {
+  /* For mobile phones: */
+  .home-header {
     width: 100%;
-    padding-bottom: 20px;
-    line-height: 1;
-    text-align: center;
-    align-content: center;
-    margin:1em;
-}}
-
-@media only screen and (max-width: 765px) {
-  .home-header h1, p {
-  display: block;
-  line-height: 1;
-  text-align: left;
-  align-content: center;
-  margin:1em;
-  
+    justify-items: center;
+    margin-left: 32px;
+    margin-right: 32px
   }
-  }
+}
