@@ -4,10 +4,10 @@ const Header = () => (
   <header className='home-header'>
     <h2>The TKO Blog</h2>
     <h1>
-      <span>"</span> Our recommendations from our podcast <span>"</span>
+      <i>Recommendations from our podcast</i>
     </h1>
     <p>
-      Read, enjoy <br /> and contribute.
+      Food, destinations, entertainment, you name it
     </p>
   </header>
 );
