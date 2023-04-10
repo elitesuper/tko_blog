@@ -279,7 +279,8 @@ input {
   }
 
   .home {
-    background-color: #f21fc5;
+    /* background-color: #f21fc5; */
+    background-color: black;
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
