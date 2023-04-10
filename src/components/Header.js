@@ -2,6 +2,7 @@ import React from 'react';
 import '../index.css';
 const Header = () => (
   <header className='home-header'>
+    <a href="http://tkorajio.com" class="home">Home</a>
     <h2>TKO Rajio</h2>
     <h1>
       <i>Recommendations from our episodes</i>
