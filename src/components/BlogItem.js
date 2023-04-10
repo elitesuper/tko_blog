@@ -19,9 +19,9 @@ const BlogItem = ({blog, content}) => {
             <p>{blog.created_at}</p>
           </div>
         </div>
-        <Link className='blogItem-link' to={`/blog/${blog.title}`} onClick={()=>{content(blog)}}>
+        {/* <Link className='blogItem-link' to={`/blog/${blog.title}`} onClick={()=>{content(blog)}}>
           ➝
-        </Link>
+        </Link> */}
       </footer>
     </div>
   );
