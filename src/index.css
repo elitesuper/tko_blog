@@ -255,28 +255,35 @@ input {
   padding: 0 !important;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 500px) {
-  .home-header h1, p {
-    display: block;
-    width: 100%;
-    padding-bottom: 20px;
-    line-height: 1;
-    text-align: center;
-    align-content: center;
-    margin:1em;
-}}
 
-@media only screen and (max-width: 765px) {
-  .home-header h1, p {
-  display: block;
-  line-height: 1;
-  text-align: left;
-  align-content: center;
-  margin:1em;
+/* Media query for smaller phone screens */
+@media (max-width: 480px) {
+  .home-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem;
+    text-shadow:  1px 1px black;
+  }
   
+  .home-header h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
   }
+  
+  .home-header h1 {
+    font-size: 1.25rem;
+    text-shadow:  1px 1px black;
   }
+  
+  .home-header a {
+    margin-bottom: 1rem;
+  }
+  
+  .home-header p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 
   .home {
     background-color: #f21fc5;
