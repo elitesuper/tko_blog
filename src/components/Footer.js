@@ -12,7 +12,8 @@ const Footer = () => (
   <footer className="home-footer">
     <div className="footer-content">
       <p className='footer-text'>Powered by </p>
-      <img src={butter} alt='butter logo' className='butter' />
+      <Link to ="https://buttercms.com">
+      <img src={butter} alt='butter logo' className='butter' /></Link>
     </div>
     <div className="social-links">
       <Link to="https://twitter.com/TKO_RAJIO" target="_blank">
