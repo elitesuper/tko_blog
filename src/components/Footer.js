@@ -12,7 +12,7 @@ const Footer = () => (
   <footer className="home-footer">
     <div className="footer-content">
       <p className='footer-text'>Powered by </p>
-      <Link to ="https://buttercms.com">
+      <Link to ="https://buttercms.com" className='butter-link'>
       <img src={butter} alt='butter logo' className='butter' /></Link>
     </div>
     <div className="social-links">

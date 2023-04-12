@@ -287,7 +287,7 @@ input {
 }
 
 .butter {
-  width: 10%;
+  width: 60px;
   height: auto;
   margin: 0 10px;
 }
@@ -386,6 +386,11 @@ input {
    transform: translateY(0);
  }
  
+ .butter-link {
+  width: 60px;
+  
+}
+
  /* Media query for smaller phone screens */
  @media (max-width: 480px) {
   .home {
