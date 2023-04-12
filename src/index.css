@@ -258,21 +258,38 @@ input {
 .home-footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100px; /* Set the height of the footer */
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.home-footer .butter {
+  margin-left: 10px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.listen-icon {
+  margin: 0 auto;
 }
 
 .footer-text {
-  font-size: 8px;
-}
-.home-footer .butter {
-  margin-left: 10px;
+  font-size: 10px;
+
 }
 
 .butter {
   width: 10%;
   height: auto;
+  margin: 0 10px;
 }
 
 
@@ -378,5 +395,19 @@ input {
   .home-header h1 {
     text-shadow: none;
   }
+
+  .listen-icon {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
   }
+
+  .footer-text {
+    font-size:small
+  }
+
+
+  }
+
+  
 
