@@ -255,6 +255,28 @@ input {
   padding: 0 !important;
 }
 
+.home-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Set the height of the footer */
+}
+
+.home-footer p {
+  margin: 0;
+}
+
+.home-footer .butter {
+  margin-left: 10px;
+}
+
+.butter {
+  width: 10%;
+  height: auto;
+}
+
+
 
 /* Media query for smaller phone screens */
 @media (max-width: 480px) {
@@ -262,6 +284,18 @@ input {
     flex-direction: column;
     text-align: center;
     padding: 0.5rem;
+  }
+  
+  .home-footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .home-footer p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
   }
   
   .home-header h2 {

@@ -2,6 +2,7 @@ import {React,  useState, useEffect } from 'react';
 import EmptyList from '../components/EmptyList';
 import BlogList from '../components/BlogList';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import SearchBar from '../components/SearchBar';
 import { blogList } from '../config/Api';
 
@@ -56,6 +57,9 @@ useEffect(() => {
       />
       {/* Blog List & Empty View */}
       {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} content = {BlogContent}/>}
+
+      {/*Page Footer */}
+      <Footer />
     </div>
   );
 };
