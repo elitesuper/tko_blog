@@ -263,10 +263,9 @@ input {
   height: 100px; /* Set the height of the footer */
 }
 
-.home-footer p {
-  margin: 0;
+.footer-text {
+  font-size: 8px;
 }
-
 .home-footer .butter {
   margin-left: 10px;
 }

@@ -6,7 +6,7 @@ const Footer = () => (
   <footer classname ="home-footer">
     <br />
     <br />
-    <p>Powered by </p> <img src= {butter} alt='butter logo' className='butter' />
+    <p className='footer-text'>Powered by </p> <img src= {butter} alt='butter logo' className='butter' />
 
   </footer>
 )
