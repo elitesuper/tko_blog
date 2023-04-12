@@ -21,11 +21,11 @@ const Blog = ({content}) => {
             <p className='blog-date'>Published {createdDate}</p>
             <h1>{content.title}</h1>
             <div className='blog-subCategory'>
-              
+            {content.tags && content.tags.length > 0 &&
                 <div>
                   <Chip label={content.tags[0].name} />
                 </div>
-              
+            }
             </div>
           </header>
           <img src={content.featured_image} alt='cover'/>
