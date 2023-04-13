@@ -10,6 +10,7 @@ const Blog = ({content}) => {
     month: 'long',
     day: 'numeric'
   });
+  console.log({content})
   return (
     <>
       <Link className='blog-goBack' to='/'>
