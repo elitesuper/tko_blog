@@ -25,7 +25,7 @@ const Blog = ({content}) => {
                 <div>
                   <Chip label={content.tags[0].name} />
                 </div>
-            }
+}
             </div>
           </header>
           <img src={content.featured_image} alt='cover'/>
