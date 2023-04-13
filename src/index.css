@@ -407,10 +407,9 @@ input {
     justify-content: center;
   }
 
-  .footer-text {
-    font-size:small
+  .home-footer .footer-text {
+    font-size: 10px;
   }
-
 
   }
 
