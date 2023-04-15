@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import Chip from './Chip';
 import '../index.css';
 
-const BlogItem = ({blog, content}) => {
+const BlogItem = ({blog}) => {
   return (
    <div className='blogItem-wrap' key={blog.title}>
-    <Link to={`/blog/${blog.title}`} onClick={()=>{content(blog)}}>
+    <Link to={`/blog/${blog.title}`}>
       <img className='blogItem-cover' src={blog.featured_image} alt='cover' /> </Link>
       <Chip label={blog.tags[0].name} />
       <h3>{blog.title}</h3>

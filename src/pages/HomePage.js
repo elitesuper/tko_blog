@@ -6,8 +6,7 @@ import Footer from '../components/Footer';
 import SearchBar from '../components/SearchBar';
 import { blogList } from '../config/Api';
 
-const HomePage = ({data}) => {
-  const [blogs, setBlogs] = useState([]);
+const HomePage = ({setBlogs, blogs}) => {
   const [searchKey, setSearchKey] = useState('');
   // Search submit
   const handleSearchBar = (e) => {
@@ -29,21 +28,6 @@ const HomePage = ({data}) => {
     setSearchKey("");
   };
 
-
-  
-  // get content from buttercms
-useEffect(() => {
-  blogList().then((res) => {
-      setBlogs(res);
-  })
-} , []);
-
-
-
-  // function to get selected blog content
- const BlogContent = (id) => {
-  data(id);
-}
   return (
     <div>
       {/* Page Header */}
@@ -56,7 +40,7 @@ useEffect(() => {
         handleSearchKey={(e) => setSearchKey(e.target.value)}
       />
       {/* Blog List & Empty View */}
-      {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} content = {BlogContent}/>}
+      {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs}/>}
 
       {/*Page Footer */}
       <Footer />

@@ -1,11 +1,11 @@
 import React from 'react';
 import BlogItem from './BlogItem';
 import '../index.css';
-const BlogList = ({ blogs, content }) => {
+const BlogList = ({ blogs }) => {
   return (
     <div className='blogList-wrap'>
       {blogs.map((blog) => (
-        <BlogItem blog={blog} content={content}/>
+        <BlogItem blog={blog}/>
       ))}
     </div>
   );

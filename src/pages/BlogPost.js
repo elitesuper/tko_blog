@@ -3,34 +3,37 @@ import Chip from '../components/Chip';
 import EmptyList from '../components/EmptyList';
 import '../index.css';
 import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 const Blog = ({content}) => {
-  const createdDate = new Date(content.created).toLocaleDateString('en-US', { 
+  const params = useParams()
+
+  const createdDate = new Date(content(params.id)?.created).toLocaleDateString('en-US', { 
     year: 'numeric',
     month: 'long',
     day: 'numeric'
   });
-  console.log({content})
+  
   return (
     <>
       <Link className='blog-goBack' to='/'>
         <span> &#8592;</span> <span>Go Back</span>
       </Link>
-      {content ? (
+      {content(params.id) ? (
         <div className='blog-wrap'>
           <header>
             <p className='blog-date'>Published {createdDate}</p>
-            <h1>{content.title}</h1>
+            <h1>{content(params.id).title}</h1>
             <div className='blog-subCategory'>
-            {content.tags && content.tags.length > 0 &&
+            {content(params.id).tags && content(params.id).tags.length > 0 &&
                 <div>
-                  <Chip label={content.tags[0].name} />
+                  <Chip label={content(params.id).tags[0].name} />
                 </div>
 }
             </div>
           </header>
-          <img src={content.featured_image} alt='cover'/>
-          <div className='blog-content' dangerouslySetInnerHTML={{__html: content.body}}></div>
+          <img src={content(params.id).featured_image} alt='cover'/>
+          <div className='blog-content(params.id)' dangerouslySetInnerHTML={{__html: content(params.id).body}}></div>
         </div>
       ) : (
         <EmptyList />
