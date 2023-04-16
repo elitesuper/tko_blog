@@ -9,9 +9,10 @@ function App() {
   const [blogs, setBlogs] = useState([]);
 
   const getBlogContent = (title) => {
-    const blog = blogs.filter((blog) => blog.title === title)
-    return blog[0]
-  }
+    const filterTitle = title.replace("%20", " ")
+        const blog = blogs.filter((blog) => blog.title === filterTitle)
+        return blog[0]
+      }
 
   // get content from buttercms
   useEffect(() => {
