@@ -9,15 +9,15 @@ function App() {
   const [blogs, setBlogs] = useState([]);
 
   const getBlogContent = (title) => {
-    const filterTitle = title.replace("%20", " ")
-        const blog = blogs.filter((blog) => blog.title === filterTitle)
-        return blog[0]
-      }
+    console.log("=============", title)
+    const blog = blogs.filter((blog) => blog.title === title)
+    return blog[0]
+  }
 
   // get content from buttercms
   useEffect(() => {
     blogList().then((res) => {
-      console.log(res)
+        console.log(res)
         setBlogs(res);
     })
   } , []);

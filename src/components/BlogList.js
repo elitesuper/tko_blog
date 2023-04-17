@@ -4,8 +4,10 @@ import '../index.css';
 const BlogList = ({ blogs }) => {
   return (
     <div className='blogList-wrap'>
-      {blogs.map((blog) => (
-        <BlogItem blog={blog}/>
+      {blogs.map((blog, index) => (
+        <div key={index}>
+          <BlogItem blog={blog}/>
+        </div>
       ))}
     </div>
   );
