@@ -5,8 +5,8 @@ import '../index.css';
 
 const BlogItem = ({blog}) => {
   return (
-   <div className='blogItem-wrap' key={blog.title}>
-    <Link to={`/blog/${blog.title}`}>
+   <div className='blogItem-wrap' key={blog.slug}>
+    <Link to={`/blog/${blog.slug}`}>
       <img className='blogItem-cover' src={blog.featured_image} alt='cover' /> </Link>
       <Chip label={blog.tags[0].name} />
       <h3>{blog.title}</h3>

@@ -8,9 +8,8 @@ import { blogList } from "./config/Api";
 function App() {
   const [blogs, setBlogs] = useState([]);
 
-  const getBlogContent = (title) => {
-    console.log("=============", title)
-    const blog = blogs.filter((blog) => blog.title === title)
+  const getBlogContent = (slug) => {
+    const blog = blogs.filter((blog) => blog.slug === slug)
     return blog[0]
   }
 
